@@ -1,0 +1,38 @@
+## Real-Time Facial and Hand Landmark Detection
+
+#### Objective:
+The goal of this project is to detect and visualize facial and hand landmarks in real-time using a webcam feed. This technology has applications in augmented reality, gesture recognition, and human-computer interaction.
+
+#### Methodology:
+
+MediaPipe Holistic Model: Utilizes MediaPipe's holistic model, which is capable of detecting facial and hand landmarks simultaneously. The model is initialized with a minimum detection and tracking confidence of 0.5.
+
+Video Capture: Uses the computer's default camera to capture live video frames. The video frames are resized for better viewing and processing efficiency.
+
+#### Image Processing:
+
+Converts the camera's BGR image format to RGB to suit the model's requirements.
+Processes the converted image using the holistic model to detect landmarks.
+Converts the image back to BGR format for display purposes.
+
+
+#### Landmark Drawing:
+
+Utilizes MediaPipe's drawing utilities to overlay detected facial contours and hand landmarks onto the live video feed.
+Facial landmarks are highlighted with specific contours and colors for clarity.
+Both hands' landmarks are also drawn, showing connections between landmarks to represent the hand structure.
+Performance Measurement:
+
+Calculates and displays frames per second (FPS) on the video feed to monitor the system's performance in real-time.
+
+#### Interactive Control:
+
+Allows the user to terminate the video feed and close the application by pressing the 'q' key.
+Technologies Used:
+
+#### Python programming language.
+OpenCV for handling video capture and image operations.
+MediaPipe for holistic landmark detection and drawing utilities.
+
+#### Outcome:
+The system provides a robust platform for detecting and visualizing facial and hand landmarks in real-time. This setup can be extended or integrated into more complex systems for various applications, including motion analysis, interactive gaming, and virtual reality environments.
